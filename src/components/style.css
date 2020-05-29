@@ -1,0 +1,70 @@
+body {
+    background-color: cornflowerblue;
+}
+
+a{
+    color: #eee;
+}
+
+h1 {
+    color: #eee;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+
+
+nav  .link {
+   
+     padding: 20px 30px;
+     color:#eee;
+     text-decoration: none;
+     font-size: 1.2rem;
+     font-weight: bold;
+}
+
+
+nav .link:hover {
+    background-color: coral;
+}
+
+nav .logo {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home-form {
+    margin-top: 50px;
+   
+}
+.home-form .label-form {
+    font-size: 1.2rem;
+    color: #eee;
+    margin: 20px;
+}
+
+form {
+    border: solid 1px #eee ;
+    width: 70%;
+}
+
+form .form-group {
+    margin: 0 50px;
+}
+
+form button {
+    margin: 50px;
+}
