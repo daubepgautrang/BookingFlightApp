@@ -3,9 +3,9 @@ import './ticketStyle.css';
 import { BrowserRouter as Router,useLocation} from 'react-router-dom';
 import axios from 'axios'
 import queryString from 'query-string'
+import {Link} from 'react-router-dom'
 
-
-export default class ticket extends Component {
+export default class Ticket extends Component {
     constructor(props) {
       super(props);
 
@@ -53,14 +53,14 @@ export default class ticket extends Component {
                     <img src="https://img.icons8.com/officel/16/000000/airplane-mode-on.png"/>
                     <span><strong>  {item.departureLocation}</strong></span>
                   </div>
-                  
+                  <br></br>
                   <div>
-                    <span className="btn"><strong>{item.airfares} VND</strong></span>
+                    <span><strong>{item.airfares} VND</strong></span>
                   </div>
-
-                  
-                </div>
-                
+                    <div>
+                        <Link to={"/booking?id="+item._id} className="btn">Đặt vé</Link>
+                    </div>
+                </div>              
               </div>
               )}
           </div>         
