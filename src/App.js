@@ -4,8 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/navbar';
 import './components/style.css';
 import Home from './components/home';
-import Ticket from './components/ticket';
-import Booking from './components/bookingpage';
+import ticket from './components/ticket';
 function App() {
   return (
     <Router>
@@ -13,8 +12,7 @@ function App() {
         <div className="container">
             <Navbar></Navbar>
             <Route path = "/" exact component= {Home} ></Route>
-            <Route path = "/search" exact component = {Ticket}></Route>
-            <Route path= "/booking" exact component = {Booking}></Route>
+            <Route path = "/search" exact component = {ticket}></Route>
         </div>
       </body>
     </Router>

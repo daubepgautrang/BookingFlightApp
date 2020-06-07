@@ -7,11 +7,6 @@ router.route('/').get((req,res) => {
     .catch( err => res.status(400).json('Error: ' + err));
 
 }) ;
-router.route('/:id').get((req,res)=> {
-    Flight.findById(req.params.id)
-    .then(flight => res.json(flight))
-    .catch(err => res.status(400).json('Error: ' + err));
-}) 
 
 router.route('/add').post((req,res) => {
     const flightID = req.body.flightID;
