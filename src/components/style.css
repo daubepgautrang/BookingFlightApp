@@ -68,3 +68,37 @@ form .form-group {
 form button {
     margin: 50px;
 }
+
+.btn-search {
+    margin-left: 50px !important ;
+    margin-top: 20px !important;
+}
+
+.form-booking {
+    padding: 30px;
+}
+
+.form-booking .label-form {
+    font-size: 1.2rem;
+    color: #eee;
+    margin: 20px;
+}
+.form-booking input {
+    padding: 25px;
+    width: 500px;
+    font-size: 20px;
+}
+.flex-row {
+    display: flex;
+    
+}
+
+.ticket-information {
+    padding: 50px;
+
+}
+
+.ticket-information h5 {
+    color: #eee;
+    
+}

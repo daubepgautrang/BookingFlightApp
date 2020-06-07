@@ -86,7 +86,7 @@ export default class Home extends Component {
                         />
                         </div>
                     </div>
-                    <button onClick = {this.onSubmit} className="btn btn-secondary">
+                    <button onClick = {this.onSubmit} className="btn btn-secondary btn-search">
                         <Link to = {"/search?origin=" + this.state.origin + "&destination=" +
                     this.state.destination + "&date=" + this.state.date }   >Search</Link></button>
                 </form>
