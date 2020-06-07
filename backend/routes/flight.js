@@ -32,4 +32,17 @@ router.route('/add').post((req,res) => {
     .catch(err => res.status(400).json('Error: ' + err))
 })
 
+router.route('/search/filterticket/').post((req,res)=>{
+    Flight.find(
+        {arrivalDate:  req.body.arrivalDate ,
+         arrivalLocation :req.body.arrivalLocation,
+         departureLocation: req.body.departureLocation,
+    }
+    )
+   .then( flight => res.json(flight))
+   .catch(err => res.status(400).json('Error: ' + err))
+
+   
+})
+
 module.exports = router;

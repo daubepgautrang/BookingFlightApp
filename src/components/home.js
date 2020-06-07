@@ -4,7 +4,7 @@ import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import { makeStyles } from '@material-ui/core/styles';
 import './style.css';
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 
 export default class Home extends Component {
     constructor (props) {
@@ -87,7 +87,8 @@ export default class Home extends Component {
                         </div>
                     </div>
                     <button onClick = {this.onSubmit} className="btn btn-secondary">
-                        <Link to = "/search" >Search</Link></button>
+                        <Link to = {"/search?origin=" + this.state.origin + "&destination=" +
+                    this.state.destination + "&date=" + this.state.date }   >Search</Link></button>
                 </form>
                 
             </div>
